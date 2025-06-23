@@ -1,0 +1,77 @@
+/* | Element                          | Farbe     | Beschreibung                              |
+| -------------------------------- | --------- | ----------------------------------------- |
+| **Hintergrund**                  | `#0F0F0F` | Tiefes Schwarzgrau – wie alter CRT-Screen |
+| **Text (normal)**                | `#00FF00` | Leuchtendes Grün – wie alte Terminals     |
+| **Text (Überschrift)**           | `#FFD700` | Golden – für Titel oder Rankings          |
+| **Akzent 1 (Buttons/Hover)**     | `#FF3131` | Leuchtend Rot – auffällig & retro         |
+| **Akzent 2 (Icons/Bewertungen)** | `#00BFFF` | Blau – erinnert an 80er-LEDs              |
+| **Box/Karten-Hintergrund**       | `#1A1A1A` | Etwas heller als Hintergrund              |
+| **Grenzen/Pixelrahmen**          | `#333333` | Für visuelle Trennung (optional pixelig)  | */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background-color: #0f0f0f;
+}
+
+main .game-card {
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 2px solid #333333;
+  border-radius: 8px;
+}
+
+main .game-card h2 {
+  text-align: center;
+}
+
+main .game-card .game-card-content {
+  display: flex;
+  gap: 16px;
+}
+
+main .game-card .game-card-content img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 0 8px 8px 0;
+}
+
+main .game-card .game-card-content .game-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+main .game-card .game-card-content .game-info p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 40px;
+  margin: 4px 0;
+  color: #00ff00;
+}
+
+main .game-card .game-card-content .game-info p strong {
+  width: 140px;
+  display: inline-block;
+}
+
+main .game-card .platforms {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  background-color: #333333;
+  padding: 8px;
+}
+
+main .game-card .platforms img {
+  width: 48px;
+  object-fit: cover;
+  border-radius: 8px;
+}

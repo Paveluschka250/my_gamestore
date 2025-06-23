@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "orbitron";
+  src: url("../assets/fonts/orbitron.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "orbitron", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FFD700;
+}
