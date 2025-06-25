@@ -112,15 +112,27 @@ main .game-card .description p {
 
 main .game-card .ingame-pics {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  padding: 12px;
 }
 
 main .game-card .ingame-pics img {
-  width: 30px;
-  height: 20px;
+  width: 160px;
+  height: 100px;
   object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
+
+main .game-card .ingame-pics img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00ffaa99;
+  border-color: #00ffaa;
+}
+
 
 main .game-card .reviews {
 }
@@ -138,6 +150,7 @@ main .game-card .reviews p {
   border: 1px solid #333;
   box-shadow: 0 0 4px #ffd70055;
   width: fit-content;
+  margin: 12px;
 }
 
 main .game-card .reviews p img {
@@ -147,6 +160,9 @@ main .game-card .reviews p img {
 }
 
 main .game-card .commentbox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   padding: 12px;
   font-family: "VT323", monospace;
   color: #e0e0e0;
@@ -155,7 +171,6 @@ main .game-card .commentbox {
 main .game-card .commentbox .comment {
   background-color: #2a2a2a;
   padding: 10px 14px;
-  margin-bottom: 12px;
   border-left: 4px solid #ff3131;
   border-radius: 6px;
 }
@@ -194,7 +209,6 @@ main .game-card .rating-input {
   border: 2px solid #333;
   border-radius: 8px;
   box-shadow: 0 0 6px #00ffaa55;
-  margin-top: 16px;
   width: 100%;
   box-sizing: border-box;
 }

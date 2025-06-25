@@ -45,6 +45,14 @@ let games = [
         date: "2022-03-01",
       },
     ],
+    ingamePics: [
+      "assets/img/ingame-pics/cyberpunk-2077/cyberpunk2077-1.png",
+      "assets/img/ingame-pics/cyberpunk-2077/cyberpunk2077-2.png",
+      "assets/img/ingame-pics/cyberpunk-2077/cyberpunk2077-3.png",
+      "assets/img/ingame-pics/cyberpunk-2077/cyberpunk2077-4.png",
+      "assets/img/ingame-pics/cyberpunk-2077/cyberpunk2077-5.png",
+      "assets/img/ingame-pics/cyberpunk-2077/cyberpunk2077-6.png",
+    ],
   },
   {
     title: "The Witcher 3: Wild Hunt",
@@ -81,6 +89,14 @@ let games = [
         date: "2023-06-15",
       },
     ],
+    ingamePics: [
+      "assets/img/ingame-pics/the-witcher-3/thewitcher3-1.png",
+      "assets/img/ingame-pics/the-witcher-3/thewitcher3-2.png",
+      "assets/img/ingame-pics/the-witcher-3/thewitcher3-3.png",
+      "assets/img/ingame-pics/the-witcher-3/thewitcher3-4.png",
+      "assets/img/ingame-pics/the-witcher-3/thewitcher3-5.png",
+      "assets/img/ingame-pics/the-witcher-3/thewitcher3-6.png",
+    ],
   },
   {
     title: "NBA 2K24",
@@ -115,6 +131,14 @@ let games = [
         rating: 6,
         date: "2024-01-03",
       },
+    ],
+    ingamePics: [
+      "assets/img/ingame-pics/nba-2k-24/nba2k24-1.png",
+      "assets/img/ingame-pics/nba-2k-24/nba2k24-2.png",
+      "assets/img/ingame-pics/nba-2k-24/nba2k24-3.png",
+      "assets/img/ingame-pics/nba-2k-24/nba2k24-4.png",
+      "assets/img/ingame-pics/nba-2k-24/nba2k24-5.png",
+      "assets/img/ingame-pics/nba-2k-24/nba2k24-6.png",
     ],
   },
   {
@@ -152,6 +176,13 @@ let games = [
         date: "2023-10-05",
       },
     ],
+    ingamePics: [
+      "assets/img/ingame-pics/apex-legends/apexlegends-1.png",
+      "assets/img/ingame-pics/apex-legends/apexlegends-2.png",
+      "assets/img/ingame-pics/apex-legends/apexlegends-3.png",
+      "assets/img/ingame-pics/apex-legends/apexlegends-4.png",
+      "assets/img/ingame-pics/apex-legends/apexlegends-5.png",
+    ],
   },
   {
     title: "Baldur's Gate 3",
@@ -177,6 +208,13 @@ let games = [
     description:
       "Erlebe ein episches Abenteuer in der Welt von Dungeons & Dragons mit intensiven Dialogen und taktischen Kämpfen.",
     comments: [],
+    ingamePics: [
+      "assets/img/ingame-pics/baldurs-gate-3/baldursgate3-1.png",
+      "assets/img/ingame-pics/baldurs-gate-3/baldursgate3-2.png",
+      "assets/img/ingame-pics/baldurs-gate-3/baldursgate3-3.png",
+      "assets/img/ingame-pics/baldurs-gate-3/baldursgate3-4.png",
+      
+    ],
   },
   {
     title: "Mass Effect Legendary Edition",
@@ -202,6 +240,13 @@ let games = [
     description:
       "Erlebe die überarbeitete Mass Effect-Trilogie mit optimierter Grafik, Gameplay und allen DLCs in einem Paket.",
     comments: [],
+    ingamePics: [
+      "assets/img/ingame-pics/mass-effect-legendary-edition/masseffect-1.png",
+      "assets/img/ingame-pics/mass-effect-legendary-edition/masseffect-2.png",
+      "assets/img/ingame-pics/mass-effect-legendary-edition/masseffect-3.png",
+      "assets/img/ingame-pics/mass-effect-legendary-edition/masseffect-4.png",
+      "assets/img/ingame-pics/mass-effect-legendary-edition/masseffect-5.png",
+    ],
   },
   {
     title: "Mount & Blade II: Bannerlord",
@@ -229,6 +274,12 @@ let games = [
     description:
       "Der Nachfolger von Warband mit erweiterten Schlachten, Diplomatie, Handel und dynastischem Aufbau.",
     comments: [],
+    ingamePics: [
+      "assets/img/ingame-pics/mount-&-blade-II/mount&blade2-1.png",
+      "assets/img/ingame-pics/mount-&-blade-II/mount&blade2-2.png",
+      "assets/img/ingame-pics/mount-&-blade-II/mount&blade2-3.png",
+      "assets/img/ingame-pics/mount-&-blade-II/mount&blade2-4.png",
+    ],
   },
   {
     title: "BioShock Infinite",
@@ -255,6 +306,13 @@ let games = [
     description:
       "Ein atmosphärischer Story-Shooter in der schwebenden Stadt Columbia mit intensiven Kämpfen und überraschendem Twist.",
     comments: [],
+    ingamePics: [
+      "assets/img/ingame-pics/bioshock-infinite/bioshock-1.png",
+      "assets/img/ingame-pics/bioshock-infinite/bioshock-2.png",
+      "assets/img/ingame-pics/bioshock-infinite/bioshock-3.png",
+      "assets/img/ingame-pics/bioshock-infinite/bioshock-4.png",
+      "assets/img/ingame-pics/bioshock-infinite/bioshock-5.png",
+    ],
   },
   {
     title: "Crash Team Racing (CTR): Nitro-Fueled",
@@ -280,5 +338,12 @@ let games = [
     description:
       "Der kultige Fun-Racer kehrt zurück – mit neuem Look, Online-Modus und allen originalen Strecken.",
     comments: [],
+    ingamePics: [
+      "assets/img/ingame-pics/ctr-nitro-fueled/ctr-1.png",
+      "assets/img/ingame-pics/ctr-nitro-fueled/ctr-2.png",
+      "assets/img/ingame-pics/ctr-nitro-fueled/ctr-3.png",
+      "assets/img/ingame-pics/ctr-nitro-fueled/ctr-4.png",
+      "assets/img/ingame-pics/ctr-nitro-fueled/ctr-5.png",
+    ],
   },
 ];

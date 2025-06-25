@@ -53,7 +53,7 @@ function createPlatformHTML(platform) {
 
 function createIngamePicsHTML(ingamePic) {
   return /*html*/`
-    <img class="ingame-pics" src="${ingamePic}" alt="${ingamePic[index]}">
+    <img class="ingame-pics" src="${ingamePic}">
   `
 }
 
