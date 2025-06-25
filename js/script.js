@@ -68,3 +68,18 @@ function addcommentToGame(index) {
     renderGameList();
   }
 }
+
+function renderDlcs(dlcs) {
+  if (dlcs.length === 0) {
+    return "Keine DLCs";
+  }
+  let result = "";
+  for (let i = 0; i < dlcs.length; i++) {
+    result += dlcs[i];
+    if (i < dlcs.length - 1) {
+      result += ", ";
+    }
+  }
+  return result;
+}
+

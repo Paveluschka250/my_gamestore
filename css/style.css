@@ -23,6 +23,7 @@ main .game-card {
   gap: 16px;
   border: 2px solid #333333;
   border-radius: 8px;
+  position: relative; /* 👉 hinzugefügt, damit .usk absolut positioniert werden kann */
 }
 
 main .game-card h2 {
@@ -260,4 +261,15 @@ main .game-card .rating-input button {
 
 main .game-card .rating-input button:hover {
   background-color: #cc2626;
+}
+
+main .game-card .usk {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+main .game-card .usk img {
+  width: 64px;
+  object-fit: contain;
 }

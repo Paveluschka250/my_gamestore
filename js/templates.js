@@ -14,7 +14,8 @@ function createGameCard(index) {
             )}</p>
             <p><strong>Genre: </strong>${game.genre}</p>
             <p><strong>Modi: </strong>${game.modes}</p>
-            <p><strong>DLCs: </strong>${game.dlcs}</p>
+            <p><strong>DLCs: </strong>${renderDlcs(game.dlcs)}</p>
+            <p><strong>USK: </strong>${game.ageRating.name}</p>
           </div>
       </div>
       <div class="platforms">
@@ -40,6 +41,9 @@ function createGameCard(index) {
         <input type="text" id="comment-text-${index}" placeholder="Dein Kommentar...">
         <input type="number" id="comment-rating-${index}" min="1" max="10" placeholder="1–10 ★">
         <button id="post-comment-btn" onclick="addcommentToGame(${index})">Posten</button>
+      </div>
+      <div class="usk">
+        <img src="${game.ageRating.icon}" alt="${game.ageRating.name}">
       </div>
     </div>
   `;
