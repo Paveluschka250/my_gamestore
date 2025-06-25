@@ -26,6 +26,9 @@ function createGameCard(index) {
       <div class="description">
         <p>${game.description}</p>   
       </div>
+      <div class="ingame-pics">
+        ${renderList(game.ingamePics, createIngamePicsHTML)}
+      </div>
       <div class="reviews">
         <p>${game.rating} ${renderRatingStars(game.rating)}</p>
       </div>
@@ -44,8 +47,14 @@ function createGameCard(index) {
 
 function createPlatformHTML(platform) {
   return /*html*/ `
-    <img src="${platform.icon}" alt="${platform.name}" title="${platform.name}" class="platform-icon">
+    <img class="platform-icon" src="${platform.icon}" alt="${platform.name}" >
   `;
+}
+
+function createIngamePicsHTML(ingamePic) {
+  return /*html*/`
+    <img class="ingame-pics" src="${ingamePic}" alt="${ingamePic[index]}">
+  `
 }
 
 function createTagHTML(tag) {
@@ -79,3 +88,5 @@ function createNoCommentsHTML() {
     <p class="no-comments">Keine Kommentare</p>
   `;
 }
+
+

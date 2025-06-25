@@ -95,6 +95,33 @@ main .game-card .tags p {
   margin: 0;
 }
 
+main .game-card .description {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px #00ffaa55;
+}
+
+main .game-card .description p {
+  font-family: "VT323", monospace;
+  font-size: 16px;
+  color: #e0e0e0;
+  text-align: justify;
+}
+
+main .game-card .ingame-pics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .game-card .ingame-pics img {
+  width: 30px;
+  height: 20px;
+  object-fit: cover;
+}
+
 main .game-card .reviews {
 }
 
@@ -117,21 +144,6 @@ main .game-card .reviews p img {
   height: 20px;
   width: auto;
   margin-top: -2px;
-}
-
-main .game-card .description {
-  background-color: #1a1a1a;
-  border: 1px solid #333;
-  padding: 12px 16px;
-  border-radius: 8px;
-  box-shadow: 0 0 6px #00ffaa55;
-}
-
-main .game-card .description p {
-  font-family: "VT323", monospace;
-  font-size: 16px;
-  color: #e0e0e0;
-  text-align: justify;
 }
 
 main .game-card .commentbox {
@@ -190,7 +202,7 @@ main .game-card .rating-input {
 main .game-card .rating-input input[type="text"] {
   width: 80%;
   padding: 8px 10px;
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   font-size: 16px;
   background-color: #2a2a2a;
   color: #fff;
@@ -202,7 +214,7 @@ main .game-card .rating-input input[type="number"] {
   width: 10%;
   min-width: 40px;
   padding: 8px;
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   font-size: 16px;
   background-color: #2a2a2a;
   color: #fff;
@@ -221,7 +233,7 @@ main .game-card .rating-input button {
   width: 10%;
   min-width: 60px;
   padding: 10px;
-  font-family: 'Press Start 2P', monospace;
+  font-family: "Press Start 2P", monospace;
   font-size: 10px;
   background-color: #ff3131;
   color: #fff;
