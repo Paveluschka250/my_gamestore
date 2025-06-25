@@ -57,8 +57,8 @@ function createPlatformHTML(platform) {
 
 function createIngamePicsHTML(ingamePic) {
   return /*html*/`
-    <img class="ingame-pics" src="${ingamePic}">
-  `
+    <img onclick="openOverlay('${ingamePic}')" class="ingame-pics" src="${ingamePic}">
+  `;
 }
 
 function createTagHTML(tag) {

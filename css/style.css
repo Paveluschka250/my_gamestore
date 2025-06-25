@@ -1,19 +1,12 @@
-/* | Element                          | Farbe     | Beschreibung                              |
-| -------------------------------- | --------- | ----------------------------------------- |
-| **Hintergrund**                  | `#0F0F0F` | Tiefes Schwarzgrau – wie alter CRT-Screen |
-| **Text (normal)**                | `#00FF00` | Leuchtendes Grün – wie alte Terminals     |
-| **Text (Überschrift)**           | `#FFD700` | Golden – für Titel oder Rankings          |
-| **Akzent 1 (Buttons/Hover)**     | `#FF3131` | Leuchtend Rot – auffällig & retro         |
-| **Akzent 2 (Icons/Bewertungen)** | `#00BFFF` | Blau – erinnert an 80er-LEDs              |
-| **Box/Karten-Hintergrund**       | `#1A1A1A` | Etwas heller als Hintergrund              |
-| **Grenzen/Pixelrahmen**          | `#333333` | Für visuelle Trennung (optional pixelig)  | */
-
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
   background-color: #0f0f0f;
+  padding: 20px;
+  font-family: "VT323", monospace;
+  color: #00ff00;
 }
 
 main .game-card {
@@ -23,11 +16,18 @@ main .game-card {
   gap: 16px;
   border: 2px solid #333333;
   border-radius: 8px;
-  position: relative; /* 👉 hinzugefügt, damit .usk absolut positioniert werden kann */
+  padding: 16px;
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 0 8px #00ffaa55;
 }
 
 main .game-card h2 {
+  color: #ffd700;
   text-align: center;
+  font-size: 28px;
+  margin: 0;
 }
 
 main .game-card .game-card-content {
@@ -39,41 +39,41 @@ main .game-card .game-card-content img {
   width: 200px;
   height: 300px;
   object-fit: cover;
-  object-position: center center;
-  border-radius: 0 8px 8px 0;
+  border-radius: 8px;
+  border: 1px solid #333;
 }
 
-main .game-card .game-card-content .game-info {
+main .game-card .game-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-}
-
-main .game-card .game-card-content .game-info p {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  gap: 40px;
-  margin: 4px 0;
+  justify-content: space-between;
+  padding: 4px 0;
   color: #00ff00;
 }
 
-main .game-card .game-card-content .game-info p strong {
+main .game-card .game-info p {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  margin: 4px 0;
+}
+
+main .game-card .game-info p strong {
   width: 140px;
   display: inline-block;
+  color: #00bfff;
 }
 
 main .game-card .platforms {
   display: flex;
-  gap: 24px;
-  align-items: center;
-  background-color: #333333;
+  gap: 12px;
   padding: 8px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
 }
 
 main .game-card .platforms img {
-  width: 48px;
-  object-fit: cover;
+  height: 32px;
   border-radius: 8px;
 }
 
@@ -91,9 +91,9 @@ main .game-card .tags p {
   font-size: 10px;
   padding: 4px 8px;
   border-radius: 4px;
-  letter-spacing: 0.5px;
   box-shadow: 0 0 4px #ff3131;
   margin: 0;
+  letter-spacing: 0.5px;
 }
 
 main .game-card .description {
@@ -105,10 +105,10 @@ main .game-card .description {
 }
 
 main .game-card .description p {
-  font-family: "VT323", monospace;
   font-size: 16px;
   color: #e0e0e0;
   text-align: justify;
+  line-height: 1.5;
 }
 
 main .game-card .ingame-pics {
@@ -124,6 +124,7 @@ main .game-card .ingame-pics img {
   height: 100px;
   object-fit: cover;
   border-radius: 16px;
+  border: 1px solid #333;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
@@ -131,18 +132,12 @@ main .game-card .ingame-pics img {
 main .game-card .ingame-pics img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px #00ffaa99;
-  border-color: #00ffaa;
-}
-
-
-main .game-card .reviews {
 }
 
 main .game-card .reviews p {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: "VT323", monospace;
   font-size: 18px;
   color: #ffd700;
   background-color: #1a1a1a;
@@ -151,13 +146,11 @@ main .game-card .reviews p {
   border: 1px solid #333;
   box-shadow: 0 0 4px #ffd70055;
   width: fit-content;
-  margin: 12px;
 }
 
 main .game-card .reviews p img {
   height: 20px;
   width: auto;
-  margin-top: -2px;
 }
 
 main .game-card .commentbox {
@@ -165,7 +158,6 @@ main .game-card .commentbox {
   flex-direction: column;
   gap: 8px;
   padding: 12px;
-  font-family: "VT323", monospace;
   color: #e0e0e0;
 }
 
@@ -217,8 +209,6 @@ main .game-card .rating-input {
 main .game-card .rating-input input[type="text"] {
   width: 80%;
   padding: 8px 10px;
-  font-family: "VT323", monospace;
-  font-size: 16px;
   background-color: #2a2a2a;
   color: #fff;
   border: 1px solid #444;
@@ -229,18 +219,11 @@ main .game-card .rating-input input[type="number"] {
   width: 10%;
   min-width: 40px;
   padding: 8px;
-  font-family: "VT323", monospace;
-  font-size: 16px;
   background-color: #2a2a2a;
   color: #fff;
   border: 1px solid #444;
   border-radius: 4px;
   text-align: center;
-
-  -moz-appearance: textfield;
-}
-
-input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -248,8 +231,6 @@ main .game-card .rating-input button {
   width: 10%;
   min-width: 60px;
   padding: 10px;
-  font-family: "Press Start 2P", monospace;
-  font-size: 10px;
   background-color: #ff3131;
   color: #fff;
   border: none;
@@ -257,6 +238,8 @@ main .game-card .rating-input button {
   cursor: pointer;
   box-shadow: 0 0 4px #ff3131aa;
   transition: background-color 0.2s;
+  font-size: 10px;
+  font-family: "Press Start 2P", monospace;
 }
 
 main .game-card .rating-input button:hover {
@@ -271,5 +254,6 @@ main .game-card .usk {
 
 main .game-card .usk img {
   width: 64px;
+  height: auto;
   object-fit: contain;
 }

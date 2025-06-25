@@ -83,3 +83,16 @@ function renderDlcs(dlcs) {
   return result;
 }
 
+function openOverlay(picture) {
+  let overlay = document.getElementById("overlay");
+  overlay.classList.remove("d-none");
+  overlay.innerHTML = `<img src="${picture}" onclick="event.stopPropagation()">`;
+  overlay.onclick = closeOverlay;
+}
+
+function closeOverlay() {
+  let overlay = document.getElementById("overlay");
+  overlay.classList.add("d-none");
+  overlay.innerHTML = "";
+}
+
