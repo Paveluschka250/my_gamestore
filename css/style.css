@@ -148,6 +148,12 @@ main .game-card .commentbox .comment {
   border-radius: 6px;
 }
 
+main .game-card .commentbox .no-comments {
+  color: #999;
+  font-style: italic;
+  margin-top: 8px;
+}
+
 main .game-card .commentbox .comment-header {
   color: #00ffaa;
   font-size: 16px;
@@ -164,4 +170,68 @@ main .game-card .commentbox .comment-meta {
   font-size: 12px;
   color: #999;
   letter-spacing: 0.5px;
+}
+
+main .game-card .rating-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background-color: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 0 6px #00ffaa55;
+  margin-top: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+main .game-card .rating-input input[type="text"] {
+  width: 80%;
+  padding: 8px 10px;
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+main .game-card .rating-input input[type="number"] {
+  width: 10%;
+  min-width: 40px;
+  padding: 8px;
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 4px;
+  text-align: center;
+
+  -moz-appearance: textfield;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+main .game-card .rating-input button {
+  width: 10%;
+  min-width: 60px;
+  padding: 10px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  background-color: #ff3131;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 4px #ff3131aa;
+  transition: background-color 0.2s;
+}
+
+main .game-card .rating-input button:hover {
+  background-color: #cc2626;
 }
