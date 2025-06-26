@@ -96,3 +96,16 @@ function closeOverlay() {
   overlay.innerHTML = "";
 }
 
+function getLikeIcon(liked) {
+  return liked
+    ? "assets/icons/favicon/liked.svg"
+    : "assets/icons/favicon/deliked.svg";
+}
+
+function toggleLike(index) {
+  games[index].liked = !games[index].liked;
+  renderGameList();
+}
+
+
+

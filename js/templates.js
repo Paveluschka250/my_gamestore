@@ -32,6 +32,10 @@ function createGameCard(index) {
       </div>
       <div class="reviews">
         <p>${game.rating} ${renderRatingStars(game.rating)}</p>
+        <p>
+          ${game.likes + (game.liked ? 1 : 0)}
+          <img src="${getLikeIcon(game.liked)}" alt="Like" onclick="toggleLike(${index})">
+        </p>
       </div>
       <div class="commentbox">
         ${renderList(game.comments, createCommentHTML)} 

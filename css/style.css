@@ -134,6 +134,11 @@ main .game-card .ingame-pics img:hover {
   box-shadow: 0 0 10px #00ffaa99;
 }
 
+main .game-card .reviews {
+  display: flex;
+  justify-content: space-around;
+}
+
 main .game-card .reviews p {
   display: flex;
   align-items: center;
