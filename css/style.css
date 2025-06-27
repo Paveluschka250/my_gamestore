@@ -2,28 +2,54 @@ header {
   background-color: #1a1a1a;
   border-bottom: 2px solid #333;
   box-shadow: 0 0 8px #00ffaa55;
-  padding: 20px;
+  padding: 8px;
   text-align: center;
 }
 
-header h1 {
+header h1 a{
   font-family: "Press Start 2P", monospace;
   font-size: 24px;
   color: #00ff00;
   margin: 0;
   letter-spacing: 1px;
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+header h1 a:hover {
+  color: #00ffaa;
+  text-shadow: 0 0 8px #00ffaaaa;
+  transform: scale(1.1);
+  cursor: default;
 }
 
 main {
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 16px;
   background-color: #0f0f0f;
   padding: 20px;
   font-family: "VT323", monospace;
   color: #00ff00;
+}
+
+main .legal {
+  max-width: 800px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #333;
+  box-shadow: 0 0 8px #00ffaa55;
+  color: #e0e0e0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+main .legal p {
+  margin: 12px 0;
 }
 
 footer {
