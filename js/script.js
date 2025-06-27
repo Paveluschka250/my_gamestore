@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  getFromLocalStorage()
   renderGameList();
 });
 
@@ -65,6 +66,7 @@ function addcommentToGame(index) {
       date: new Date().toISOString().split("T")[0],
     };
     games[index].ownComment.push(newComment);
+    saveToLocalStorage();
     renderGameList();
   }
 }
@@ -104,10 +106,24 @@ function getLikeIcon(liked) {
 
 function toggleLike(index) {
   games[index].liked = !games[index].liked;
+  saveToLocalStorage();
   renderGameList();
 }
 
 function deleteComment(gameIndex, commentIndex) {
   games[gameIndex].ownComment.splice(commentIndex, 1);
+  saveToLocalStorage();
   renderGameList();
+}
+
+function saveToLocalStorage() {
+  localStorage.setItem("games", JSON.stringify(games));
+}
+
+function getFromLocalStorage() {
+  let storedGames = localStorage.getItem("games");
+
+  if (storedGames) {
+    games = JSON.parse(storedGames);
+  }
 }

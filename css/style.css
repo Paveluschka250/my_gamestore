@@ -6,7 +6,11 @@ header {
   text-align: center;
 }
 
-header h1 a{
+header h1 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
   font-family: "Press Start 2P", monospace;
   font-size: 24px;
   color: #00ff00;
@@ -21,6 +25,11 @@ header h1 a:hover {
   text-shadow: 0 0 8px #00ffaaaa;
   transform: scale(1.1);
   cursor: default;
+}
+
+header h1 a img {
+  height: 40px;
+  filter: invert(1);
 }
 
 main {
