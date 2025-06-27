@@ -38,6 +38,7 @@ function createGameCard(index) {
         </p>
       </div>
       <div class="commentbox">
+        ${renderList(game.ownComment, createOwnCommentHTML, index)}
         ${renderList(game.comments, createCommentHTML)} 
         ${renderNoComments(game.comments)}
       </div>
@@ -82,6 +83,23 @@ function createCommentHTML(comment) {
       </div>
       <div class="comment-meta">
         ⭐ ${comment.rating} &nbsp; | &nbsp; 🗓️ ${comment.date}
+      </div>
+    </div>
+  `;
+}
+
+function createOwnCommentHTML(comment, commentIndex, gameIndex) {
+  return /*html*/ `
+    <div class="comment">
+      <div class="comment-header">
+        <strong>${comment.name}</strong>
+      </div>
+      <div class="comment-text">
+        ${comment.comment}
+      </div>
+      <div class="comment-meta">
+        ⭐ ${comment.rating} &nbsp; | &nbsp; 🗓️ ${comment.date}
+        <span onclick="deleteComment(${gameIndex}, ${commentIndex})" class="delete-icon" title="Löschen">🗑️</span>
       </div>
     </div>
   `;

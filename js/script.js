@@ -10,10 +10,10 @@ function renderGameList() {
   }
 }
 
-function renderList(items, templateFunction) {
+function renderList(items, templateFunction, parentIndex) {
   let html = "";
   for (let i = 0; i < items.length; i++) {
-    html += templateFunction(items[i]);
+    html += templateFunction(items[i], i, parentIndex);
   }
   return html;
 }
@@ -64,7 +64,7 @@ function addcommentToGame(index) {
       rating: Math.round(parseFloat(ratingInput)),
       date: new Date().toISOString().split("T")[0],
     };
-    games[index].comments.push(newComment);
+    games[index].ownComment.push(newComment);
     renderGameList();
   }
 }
@@ -107,5 +107,7 @@ function toggleLike(index) {
   renderGameList();
 }
 
-
-
+function deleteComment(gameIndex, commentIndex) {
+  games[gameIndex].ownComment.splice(commentIndex, 1);
+  renderGameList();
+}

@@ -16,13 +16,22 @@ let games = [
     rating: 8.5,
     metacritic: 86,
     likes: 1234,
-    ageRating: {name: "USK 18", icon: "assets/img/usk/usk-18.png"},
+    ageRating: { name: "USK 18", icon: "assets/img/usk/usk-18.png" },
     modes: ["Singleplayer"],
     dlcs: ["Phantom Liberty"],
     tags: ["Open World", "Dystopie", "Story-driven", "First Person"],
     liked: true,
     description:
       "Tauche ein in die düstere Zukunft von Night City – einer offenen Welt voller Korruption, Machtkämpfe und kybernetischer Upgrades.",
+    ownComment: [
+      {
+        name: "MyProfil",
+        comment:
+          "MAIN KOMMENTAR den ich loschen moechte wenn ich auch den eimer klicke",
+        rating: 9,
+        date: "2025-06-27",
+      },
+    ],
     comments: [
       {
         name: "PlayerOne",
@@ -73,13 +82,14 @@ let games = [
     rating: 9.6,
     metacritic: 93,
     likes: 1234,
-    ageRating: {name: "USK 18", icon: "assets/img/usk/usk-18.png"},
+    ageRating: { name: "USK 18", icon: "assets/img/usk/usk-18.png" },
     modes: ["Singleplayer"],
     dlcs: ["Hearts of Stone", "Blood and Wine"],
     tags: ["Open World", "Story-driven", "Entscheidungen", "Magie"],
     liked: true,
     description:
       "Begleite Geralt von Riva durch eine dunkle Fantasywelt voller Monster, Intrigen und tragischer Schicksale.",
+    ownComment: [],
     comments: [
       {
         name: "YenneferLover",
@@ -116,13 +126,14 @@ let games = [
     rating: 7.2,
     metacritic: 68,
     likes: 1234,
-    ageRating: {name: "USK 0", icon: "assets/img/usk/usk-0.png"},
+    ageRating: { name: "USK 0", icon: "assets/img/usk/usk-0.png" },
     modes: ["Singleplayer", "Multiplayer", "Online"],
     dlcs: [],
     tags: ["Basketball", "Simulation", "eSports"],
     liked: false,
     description:
       "Die aktuellste Basketballsimulation mit realistischem Gameplay, MyCareer-Modus und Online-Ligen.",
+    ownComment: [],
     comments: [
       {
         name: "HoopsFan99",
@@ -160,13 +171,14 @@ let games = [
     rating: 8.1,
     metacritic: 89,
     likes: 1234,
-    ageRating: {name: "USK 16", icon: "assets/img/usk/usk-16.png"},
+    ageRating: { name: "USK 16", icon: "assets/img/usk/usk-16.png" },
     modes: ["Multiplayer", "Online Coop"],
     dlcs: [],
     tags: ["Shooter", "Battle Royale", "eSports", "Team-basiert"],
     liked: true,
     description:
       "Ein rasanter Battle-Royale-Shooter mit einzigartigen Legenden, taktischem Teamplay und neuen Updates jede Saison.",
+    ownComment: [],
     comments: [
       {
         name: "LegendHunter",
@@ -200,20 +212,20 @@ let games = [
     rating: 9.7,
     metacritic: 96,
     likes: 1234,
-    ageRating: {name: "USK 18", icon: "assets/img/usk/usk-18.png"},
+    ageRating: { name: "USK 18", icon: "assets/img/usk/usk-18.png" },
     modes: ["Singleplayer", "Online Coop"],
     dlcs: [],
     tags: ["D&D", "Rundenbasiert", "Entscheidungen", "Koop"],
     liked: true,
     description:
       "Erlebe ein episches Abenteuer in der Welt von Dungeons & Dragons mit intensiven Dialogen und taktischen Kämpfen.",
+    ownComment: [],
     comments: [],
     ingamePics: [
       "assets/img/ingame-pics/baldurs-gate-3/baldursgate3-1.png",
       "assets/img/ingame-pics/baldurs-gate-3/baldursgate3-2.png",
       "assets/img/ingame-pics/baldurs-gate-3/baldursgate3-3.png",
       "assets/img/ingame-pics/baldurs-gate-3/baldursgate3-4.png",
-      
     ],
   },
   {
@@ -232,13 +244,14 @@ let games = [
     rating: 8.8,
     metacritic: 86,
     likes: 1234,
-    ageRating: {name: "USK 16", icon: "assets/img/usk/usk-16.png"},
+    ageRating: { name: "USK 16", icon: "assets/img/usk/usk-16.png" },
     modes: ["Singleplayer"],
     dlcs: ["Alle Haupt-DLCs der Originaltrilogie"],
     tags: ["Sci-Fi", "Entscheidungen", "Story-driven", "Charaktere"],
     liked: true,
     description:
       "Erlebe die überarbeitete Mass Effect-Trilogie mit optimierter Grafik, Gameplay und allen DLCs in einem Paket.",
+    ownComment: [],
     comments: [],
     ingamePics: [
       "assets/img/ingame-pics/mass-effect-legendary-edition/masseffect-1.png",
@@ -266,13 +279,14 @@ let games = [
     rating: 8.3,
     metacritic: 78,
     likes: 1234,
-    ageRating: {name: "USK 12", icon: "assets/img/usk/usk-12.png"},
+    ageRating: { name: "USK 12", icon: "assets/img/usk/usk-12.png" },
     modes: ["Singleplayer", "Multiplayer"],
     dlcs: [],
     tags: ["Schlachten", "Mittelalter", "Sandbox", "RPG"],
     liked: true,
     description:
       "Der Nachfolger von Warband mit erweiterten Schlachten, Diplomatie, Handel und dynastischem Aufbau.",
+    ownComment: [],
     comments: [],
     ingamePics: [
       "assets/img/ingame-pics/mount-&-blade-II/mount&blade2-1.png",
@@ -298,13 +312,14 @@ let games = [
     rating: 9.0,
     metacritic: 94,
     likes: 1234,
-    ageRating: {name: "USK 18", icon: "assets/img/usk/usk-18.png"},
+    ageRating: { name: "USK 18", icon: "assets/img/usk/usk-18.png" },
     modes: ["Singleplayer"],
     dlcs: ["Burial at Sea"],
     tags: ["Story", "Zeitreisen", "Shooter", "Steampunk"],
     liked: true,
     description:
       "Ein atmosphärischer Story-Shooter in der schwebenden Stadt Columbia mit intensiven Kämpfen und überraschendem Twist.",
+    ownComment: [],
     comments: [],
     ingamePics: [
       "assets/img/ingame-pics/bioshock-infinite/bioshock-1.png",
@@ -330,13 +345,14 @@ let games = [
     rating: 8.4,
     metacritic: 83,
     likes: 1234,
-    ageRating: {name: "USK 6", icon: "assets/img/usk/usk-6.png"},
+    ageRating: { name: "USK 6", icon: "assets/img/usk/usk-6.png" },
     modes: ["Singleplayer", "Multiplayer", "Online"],
     dlcs: [],
     tags: ["Racing", "Arcade", "Remake", "Fun"],
     liked: true,
     description:
       "Der kultige Fun-Racer kehrt zurück – mit neuem Look, Online-Modus und allen originalen Strecken.",
+    ownComment: [],
     comments: [],
     ingamePics: [
       "assets/img/ingame-pics/ctr-nitro-fueled/ctr-1.png",
