@@ -45,8 +45,8 @@ function renderRatingStars(rating) {
   return createRatingImageHTML(imageFile, rating);
 }
 
-function renderNoComments(comments) {
-  if (comments.length === 0) {
+function renderNoComments(comments, ownComment) {
+  if (comments.length === 0 && ownComment.length === 0) {
     return createNoCommentsHTML();
   }
   return "";

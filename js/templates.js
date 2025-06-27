@@ -40,7 +40,7 @@ function createGameCard(index) {
       <div class="commentbox">
         ${renderList(game.ownComment, createOwnCommentHTML, index)}
         ${renderList(game.comments, createCommentHTML)} 
-        ${renderNoComments(game.comments)}
+        ${renderNoComments(game.comments, game.ownComment)}
       </div>
       <div class="rating-input">
         <input type="text" id="comment-text-${index}" placeholder="Dein Kommentar...">
