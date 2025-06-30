@@ -267,3 +267,31 @@
   height: auto;
   object-fit: contain;
 }
+
+@media (max-width: 768px) {
+
+  .game-card h2 {
+    text-align: left;
+  }
+  .game-card .game-card-content {
+    flex-direction: column;
+  }
+
+  .game-card .usk img {
+    width: 32px;
+  }
+
+  .game-card .platforms img {
+    height: 16px;
+  }
+
+  .game-card .game-info p {
+    font-size:12px;
+  }
+
+  .game-card .reviews {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
